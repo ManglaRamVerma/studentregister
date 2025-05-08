@@ -1,0 +1,225 @@
+﻿@model School.Models.Casting.StudentDetails
+@{
+    ViewData["Title"] = "Register Student";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Update Student Details</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post" id="registrationForm" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                            
+
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Phone" class="control-label"></label>
+                            <input asp-for="Phone" class="form-control" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CountryId">Country</label>
+                            <select asp-for="CountryId" class="form-control" id="CountryId">
+                                <option value="">-- Select Country --</option>
+                            </select>
+                            <span asp-validation-for="CountryId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="StateId">State</label>
+                            <select asp-for="StateId" class="form-control" id="StateId">
+                                <option value="">-- Select State --</option>
+                            </select>
+                            <span asp-validation-for="StateId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="CityId">City</label>
+                            <select asp-for="CityId" class="form-control" id="CityId">
+                                <option value="">-- Select City --</option>
+                            </select>
+                            <span asp-validation-for="CityId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3"> 
+                           <label asp-for="ImageFile" class="control-label"></label> 
+                        
+                           <input asp-for="ImageFile" class="form-control" type="file" accept="image/*" id="imageInput" /> 
+                           
+                           <span asp-validation-for="ImageFile" class="text-danger"></span> 
+                           <div id="imagePreview" class="mt-2" style="display: @(string.IsNullOrEmpty(Model?.ImagePath) ? "none" : "block")"> 
+                                <img src="@Model?.ImagePath" class="img-fluid img-thumbnail" style="max-width: 100px;" alt="Student Image" />
+                            </div> 
+                         </div> 
+
+         
+
+                   
+               
+
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-primary">@(Model?.Id > 0 ? "Update" : "Register")</button>
+                            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+                      $(document).ready(function () {
+                           var originalImagePath = $('#existingImagePath').val();
+            
+            $('#imageInput').change(function () {
+                if (this.files && this.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#imagePreview img').attr('src', e.target.result);
+                        $('#imagePreview').fadeIn(500);
+                    }
+
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+       
+
+
+                   var selectedCountryId = '@Model?.CountryId';
+        var selectedStateId = '@Model?.StateId';
+        var selectedCityId = '@Model?.CityId';
+
+        function loadCountries() {
+            $.getJSON('/Student/GetCountries', function (data) {
+                $('#CountryId').empty().append('<option value="">-- Select Country --</option>');
+                $.each(data, function (i, country) {
+                    $('#CountryId').append(`<option value="${country.id}">${country.name}</option>`);
+                });
+                if (selectedCountryId && selectedCountryId !== '' && selectedCountryId !== '0') {
+                    $('#CountryId').val(selectedCountryId);
+                    loadStates(selectedCountryId);
+                }
+            });
+        }
+          
+        function loadStates(countryId) {
+            if (!countryId) return;
+            $.getJSON(`/Student/GetStates?id=${countryId}`, function (data) {
+                $('#StateId').empty();
+                $('#CityId').empty();
+                if (data && data.length > 0) {
+                    $('#StateId').append('<option value="">-- Select State --</option>');
+                    $.each(data, function (i, state) {
+                        $('#StateId').append(`<option value="${state.id}">${state.name}</option>`);
+                    });
+                    if (selectedStateId && selectedStateId !== '' && selectedStateId !== '0') {
+                        $('#StateId').val(selectedStateId);
+                        loadCities(selectedStateId);
+                       
+
+                    }
+                }
+            });
+        }
+
+        function loadCities(stateId) {
+            if (!stateId) return;
+            $.getJSON(`/Student/GetCities?id=${stateId}`, function (data) {
+                $('#CityId').empty();
+                if (data && data.length > 0) {
+                    $('#CityId').append('<option value="">-- Select City --</option>');
+                    $.each(data, function (i, city) {
+                        $('#CityId').append(`<option value="${city.id}">${city.name}</option>`);
+                    });
+                    if (selectedCityId && selectedCityId !== '' && selectedCityId !== '0') {
+                        $('#CityId').val(selectedCityId);
+                    }
+                }
+            });
+        }
+
+        loadCountries();
+
+        $('#CountryId').change(function () {
+            var countryId = $(this).val();
+            $('#StateId').empty();
+            $('#CityId').empty();
+
+          
+            if (countryId !== selectedCountryId) {
+                selectedStateId = '';
+                selectedCityId = '';
+            }
+
+            if (countryId) {
+                loadStates(countryId);
+            }
+        });
+
+        $('#StateId').change(function () {
+            var stateId = $(this).val();
+            $('#CityId').empty();
+
+           
+            if (stateId !== selectedStateId) {
+                selectedCityId = '';
+            }
+
+            if (stateId) {
+                loadCities(stateId);
+            }
+        });
+          
+            $('#registrationForm').submit(function (e) {
+                var isValid = true;
+
+                if (!$('#CountryId').val()) {
+                    $('[data-valmsg-for="CountryId"]').text('Please select a country');
+                    isValid = false;
+                } else {
+                    $('[data-valmsg-for="CountryId"]').text('');
+                }
+
+               
+                if ($('#StateId option').length > 0 && !$('#StateId').val()) {
+                    $('[data-valmsg-for="StateId"]').text('Please select a state');
+                    isValid = false;
+                } else {
+                    $('[data-valmsg-for="StateId"]').text('');
+                }
+
+                
+                var cityOptions = $('#CityId option').length;
+                var cityValue = $('#CityId').val();
+
+                if (cityOptions > 1 && !cityValue) {
+                    $('[data-valmsg-for="CityId"]').text('Please select a city');
+                    isValid = false;
+                } else {
+                    $('[data-valmsg-for="CityId"]').text('');
+                }
+
+                return isValid;
+            });
+        });
+
+    </script>
+}

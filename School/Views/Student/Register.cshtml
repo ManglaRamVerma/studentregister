@@ -1,0 +1,169 @@
+﻿@model School.Models.Casting.StudentDetails
+@{
+    ViewData["Title"] = "Register Student";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Student Registration</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="SaveStudent" method="post" id="registrationForm" enctype="multipart/form-data">
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Phone" class="control-label"></label>
+                            <input asp-for="Phone" class="form-control" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="CountryId">Country</label>
+                            <select asp-for="CountryId" class="form-control" id="Country">
+                                <option value="">-- Select Country --</option>
+                            </select>
+                            <span asp-validation-for="CountryId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="StateId">State</label>
+                            <select asp-for="StateId" class="form-control" id="State">
+                                <option value="">-- Select State --</option>
+                            </select>
+                            <span asp-validation-for="StateId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="CityId">City</label>
+                            <select asp-for="CityId" class="form-control" id="City">
+                                <option value="">-- Select City --</option>
+                            </select>
+                            <span asp-validation-for="CityId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="ImageFile" class="control-label"></label>
+                            <input asp-for="ImageFile" class="form-control" type="file" accept="image/*" id="imageInput" />
+                            <span asp-validation-for="ImageFile" class="text-danger"></span>
+                            <div id="imagePreview" class="mt-2" style="display: none;">
+                                <img src="" class="img-fluid img-thumbnail" style="max-width: 100px;" alt="Selected Image" />
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            
+            $('#imageInput').change(function() {
+               
+                if (this.files && this.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                      
+                        $('#imagePreview img').attr('src', e.target.result);
+                       
+                        $('#imagePreview').fadeIn(500);
+                    }
+
+                   
+                    reader.readAsDataURL(this.files[0]);
+                } else {
+                  
+                    $('#imagePreview').hide();
+                }
+            });
+
+            $.getJSON('/Student/GetCountries', function (data) {
+                $.each(data, function (i, cname) {
+                    $('#Country').append('<option value="' + cname.id + '">' + cname.name + '</option>');
+                });
+
+                if (@Json.Serialize(Model?.CountryId) > 0) {
+                    $('#Country').val(@Json.Serialize(Model?.CountryId));
+                    $('#Country').trigger('change');
+                }
+            });
+
+            
+            $('#Country').change(function () {
+                var countryId = $(this).val();
+                $('#State').empty().append('<option value="">Select State</option>');
+                $('#City').empty().append('<option value="">City</option>');
+
+                if (countryId) {
+                    $.getJSON('/Student/GetStates?id=' + countryId, function (data) {
+                        $.each(data, function (i, sname) {
+                            $('#State').append('<option value="' + sname.id + '">' + sname.name + '</option>');
+                        });
+
+                        if (@Json.Serialize(Model?.StateId) > 0) {
+                            $('#State').val(@Json.Serialize(Model?.StateId));
+                            $('#State').trigger('change');
+                        }
+                    });
+                }
+            });
+
+            
+            $('#State').change(function () {
+                var stateId = $(this).val();
+                $('#City').empty().append('<option value="">City</option>');
+
+                if (stateId) {
+                    $.getJSON('/Student/GetCities?id=' + stateId, function (data) {
+                        $.each(data, function (i, ccname) {
+                            $('#City').append('<option value="' + ccname.id + '">' + ccname.name + '</option>');
+                        });
+
+                        if (@Json.Serialize(Model?.CityId) > 0) {
+                            $('#City').val(@Json.Serialize(Model?.CityId));
+                        }
+                    });
+                }
+            });
+
+        
+            $('#registrationForm').submit(function (e) {
+                var isValid = true;
+
+                if (!$('#Country').val()) {
+                    $('[data-valmsg-for="CountryId"]').text('Please select a country');
+                    isValid = false;
+                }
+
+                if (!$('#State').val()) {
+                    $('[data-valmsg-for="StateId"]').text('Please select a state');
+                    isValid = false;
+                }
+
+                if (!$('#City').val()) {
+                    $('[data-valmsg-for="CityId"]').text('Please select a city');
+                    isValid = false;
+                }
+
+                return isValid;
+            });
+        });
+    </script>
+}

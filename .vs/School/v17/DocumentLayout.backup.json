@@ -1,0 +1,301 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\learning\\School\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\controllers\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\controllers\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\models\\casting\\studentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\models\\casting\\studentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\models\\casting\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\models\\casting\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\views\\student\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\views\\student\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\migrations\\20250415093524_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\migrations\\20250415093524_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\models\\casting\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\models\\casting\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\models\\casting\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\models\\casting\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\models\\casting\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\models\\casting\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\views\\student\\matronic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\views\\student\\matronic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\migrations\\20250416051639_third.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\migrations\\20250416051639_third.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\migrations\\20250415113046_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\migrations\\20250415113046_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|d:\\learning\\school\\school\\migrations\\20250416050519_third migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F3F3D9-B31A-4CFB-8927-1B2FDBDB2C9A}|School\\School.csproj|solutionrelative:school\\migrations\\20250416050519_third migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Controllers\\Student.cs",
+              "RelativeDocumentMoniker": "School\\Controllers\\Student.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Controllers\\Student.cs*",
+              "RelativeToolTip": "School\\Controllers\\Student.cs*",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAGcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:39:05.882Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "School\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\learning\\School\\School\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "School\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T10:25:01.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Views\\Student\\Edit.cshtml",
+              "RelativeDocumentMoniker": "School\\Views\\Student\\Edit.cshtml",
+              "ToolTip": "D:\\learning\\School\\School\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "School\\Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAGsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T12:19:39.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250415093524_first.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Migrations\\20250415093524_first.cs",
+              "RelativeDocumentMoniker": "School\\Migrations\\20250415093524_first.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Migrations\\20250415093524_first.cs",
+              "RelativeToolTip": "School\\Migrations\\20250415093524_first.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:35:25.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentDetails.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Models\\Casting\\StudentDetails.cs",
+              "RelativeDocumentMoniker": "School\\Models\\Casting\\StudentDetails.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Models\\Casting\\StudentDetails.cs",
+              "RelativeToolTip": "School\\Models\\Casting\\StudentDetails.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwB8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:32:46.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "School\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\learning\\School\\School\\Views\\Student\\Index.cshtml*",
+              "RelativeToolTip": "School\\Views\\Student\\Index.cshtml*",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAADIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T09:27:53.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentViewModel.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Models\\Casting\\StudentViewModel.cs",
+              "RelativeDocumentMoniker": "School\\Models\\Casting\\StudentViewModel.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Models\\Casting\\StudentViewModel.cs",
+              "RelativeToolTip": "School\\Models\\Casting\\StudentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T10:11:38.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Views\\Student\\Register.cshtml",
+              "RelativeDocumentMoniker": "School\\Views\\Student\\Register.cshtml",
+              "ToolTip": "D:\\learning\\School\\School\\Views\\Student\\Register.cshtml",
+              "RelativeToolTip": "School\\Views\\Student\\Register.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T07:08:22.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Country.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Models\\Casting\\Country.cs",
+              "RelativeDocumentMoniker": "School\\Models\\Casting\\Country.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Models\\Casting\\Country.cs",
+              "RelativeToolTip": "School\\Models\\Casting\\Country.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:33:45.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "State.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Models\\Casting\\State.cs",
+              "RelativeDocumentMoniker": "School\\Models\\Casting\\State.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Models\\Casting\\State.cs",
+              "RelativeToolTip": "School\\Models\\Casting\\State.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:34:18.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\learning\\School\\School\\appsettings.json",
+              "RelativeDocumentMoniker": "School\\appsettings.json",
+              "ToolTip": "D:\\learning\\School\\School\\appsettings.json",
+              "RelativeToolTip": "School\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-15T09:30:13.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Program.cs",
+              "RelativeDocumentMoniker": "School\\Program.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Program.cs",
+              "RelativeToolTip": "School\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:35:41.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "City.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Models\\Casting\\City.cs",
+              "RelativeDocumentMoniker": "School\\Models\\Casting\\City.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Models\\Casting\\City.cs",
+              "RelativeToolTip": "School\\Models\\Casting\\City.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:33:23.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Matronic.cshtml",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Views\\Student\\Matronic.cshtml",
+              "RelativeDocumentMoniker": "School\\Views\\Student\\Matronic.cshtml",
+              "ToolTip": "D:\\learning\\School\\School\\Views\\Student\\Matronic.cshtml",
+              "RelativeToolTip": "School\\Views\\Student\\Matronic.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T11:25:20.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250416051639_third.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Migrations\\20250416051639_third.cs",
+              "RelativeDocumentMoniker": "School\\Migrations\\20250416051639_third.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Migrations\\20250416051639_third.cs",
+              "RelativeToolTip": "School\\Migrations\\20250416051639_third.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T05:16:40.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250415113046_second.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Migrations\\20250415113046_second.cs",
+              "RelativeDocumentMoniker": "School\\Migrations\\20250415113046_second.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Migrations\\20250415113046_second.cs",
+              "RelativeToolTip": "School\\Migrations\\20250415113046_second.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIBJwBcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T11:30:46.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250416050519_third migration.cs",
+              "DocumentMoniker": "D:\\learning\\School\\School\\Migrations\\20250416050519_third migration.cs",
+              "RelativeDocumentMoniker": "School\\Migrations\\20250416050519_third migration.cs",
+              "ToolTip": "D:\\learning\\School\\School\\Migrations\\20250416050519_third migration.cs",
+              "RelativeToolTip": "School\\Migrations\\20250416050519_third migration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T05:05:19.363Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
